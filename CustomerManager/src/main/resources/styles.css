@@ -1,0 +1,124 @@
+/* Customer Manager theme: colours taken from the Zambian flag */
+/* green #198a00, orange #ef7d00, red #de2010 */
+
+/* Whole window */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #f3f6f2;
+    -fx-focus-color: #ef7d00;
+    -fx-faint-focus-color: #ef7d0022;
+    -fx-accent: #198a00;
+}
+
+/* Green banner at the top */
+.header {
+    -fx-background-color: #198a00;
+    -fx-padding: 18 20 14 20;
+    -fx-border-color: transparent transparent #ef7d00 transparent;
+    -fx-border-width: 0 0 5 0;
+}
+
+.title {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.subtitle {
+    -fx-text-fill: #e3f2dc;
+    -fx-font-size: 13px;
+}
+
+/* White box around the form */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 10, 0, 0, 2);
+}
+
+.form-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #2b2b2b;
+}
+
+.text-field, .combo-box {
+    -fx-pref-height: 34px;
+}
+
+/* Save button: green */
+.save-button {
+    -fx-background-color: #198a00;
+    -fx-background-radius: 6;
+    -fx-border-color: #198a00;
+    -fx-border-radius: 6;
+    -fx-border-width: 2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6 16;
+    -fx-cursor: hand;
+}
+
+.save-button:hover {
+    -fx-background-color: #146e00;
+}
+
+/* Orange border shows which button has keyboard focus */
+.save-button:focused {
+    -fx-border-color: #ef7d00;
+}
+
+/* Delete button: red outline */
+.delete-button {
+    -fx-background-color: white;
+    -fx-background-radius: 6;
+    -fx-border-color: #de2010;
+    -fx-border-radius: 6;
+    -fx-border-width: 2;
+    -fx-text-fill: #de2010;
+    -fx-font-weight: bold;
+    -fx-padding: 6 16;
+    -fx-cursor: hand;
+}
+
+.delete-button:hover {
+    -fx-background-color: #fdecea;
+}
+
+.delete-button:focused {
+    -fx-border-color: #ef7d00;
+}
+
+/* Table */
+.table-view {
+    -fx-selection-bar: #ef7d00;
+    -fx-selection-bar-non-focused: #f6b26b;
+}
+
+.table-view .column-header-background,
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: #198a00;
+}
+
+.table-view .column-header {
+    -fx-border-color: #146e00;
+    -fx-border-width: 0 1 0 0;
+    -fx-pref-height: 34px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+}
+
+.table-row-cell {
+    -fx-cell-size: 32px;
+}
+
+.count-label {
+    -fx-text-fill: #555555;
+    -fx-font-size: 13px;
+}
