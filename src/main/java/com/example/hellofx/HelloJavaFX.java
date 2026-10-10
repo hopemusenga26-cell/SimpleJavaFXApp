@@ -24,7 +24,7 @@ public class HelloJavaFX extends Application {
         // Requirement 4: Add a second button called "Reset"
         Button resetButton = new Button("Reset");
         resetButton.setOnAction(event ->
-                message.setText("Welcome, Musenga!")
+                message.setText("Welcome, Musenga Hope Sichula!")
         );
 
         // Put both buttons side by side in an HBox
